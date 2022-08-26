@@ -1,0 +1,145 @@
+{
+  "todos": [
+    {
+      "name": "ahmad",
+      "id": 9552,
+      "isComplete": false
+    },
+    {
+      "name": "asd",
+      "id": 6371,
+      "isComplete": false
+    },
+    {
+      "name": "as",
+      "id": 4589,
+      "isComplete": false
+    },
+    {
+      "name": "das",
+      "id": 9579,
+      "isComplete": false
+    },
+    {
+      "name": "d",
+      "id": 1059,
+      "isComplete": false
+    },
+    {
+      "name": "as",
+      "id": 9950,
+      "isComplete": false
+    },
+    {
+      "name": "d",
+      "id": 9062,
+      "isComplete": false
+    },
+    {
+      "name": "as",
+      "id": 4824,
+      "isComplete": false
+    },
+    {
+      "name": "d",
+      "id": 2320,
+      "isComplete": false
+    },
+    {
+      "name": "as",
+      "id": 6312,
+      "isComplete": false
+    },
+    {
+      "name": "d",
+      "id": 7957,
+      "isComplete": false
+    },
+    {
+      "name": "as",
+      "id": 3960,
+      "isComplete": false
+    },
+    {
+      "name": "d",
+      "id": 5028,
+      "isComplete": false
+    },
+    {
+      "name": "as",
+      "id": 3679,
+      "isComplete": false
+    },
+    {
+      "name": "d",
+      "id": 4560,
+      "isComplete": false
+    },
+    {
+      "name": "as",
+      "id": 352,
+      "isComplete": false
+    },
+    {
+      "name": "d",
+      "id": 1583,
+      "isComplete": true
+    },
+    {
+      "name": "asd",
+      "id": 1636,
+      "isComplete": true
+    }
+  ],
+  "users": [
+    {
+      "email": "olivier@mail.com",
+      "password": "$2a$10$.JUGmdIEktAji4NjSw6YBO16MIZsHW0c1iArb92nD/e33if6gnnxC",
+      "firstname": "Olivier",
+      "lastname": "Monge",
+      "age": 32,
+      "id": 1
+    },
+    {
+      "email": "hatem.hatamleh@gmail.com",
+      "password": "$2a$10$WGWOle/Rlii9hJX8Aud4oe3SUyh11vfUTNgNgZoL/7gG1lzV2w5Ue",
+      "firstname": "Hatem",
+      "lastname": "Hatamleh",
+      "age": 33,
+      "id": 2
+    },
+    {
+      "email": "test@mail.com",
+      "password": "$2a$10$LOHNy2rbllaS1Brd8rvrdO5CfuIEun/ANXlt99ivs0dnvMwnAc7QS",
+      "id": 3
+    },
+    {
+      "email": "olivie222r@mail.com",
+      "password": "$2a$10$iYES1adDcJseat4iamNMeO5vHvXFwvktnMmeIdRrY0trHFuDrDN3m",
+      "firstname": "Olivier",
+      "lastname": "Monge",
+      "age": 32,
+      "id": 4
+    }
+  ],
+  "courses": [
+    {
+      "id": 1,
+      "courseTitle": "Full selenium course",
+      "duration": "18 hours",
+      "videos": 180
+    },
+    {
+      "id": 2,
+      "courseTitle": "Full appium course",
+      "duration": "16 hours",
+      "videos": 140
+    },
+    {
+      "id": 3,
+      "courseTitle": "Full Cypress course",
+      "duration": "8 hours",
+      "videos": 100
+    }
+  ]
+}
