@@ -15,8 +15,10 @@
 ### Prepare cypress env
 -   Go to the test directory:  `cd test`
 -   install all the dependences using `npm install`
--   Run cypress command for the GUI scenarios `npm run cy:open:gui`
--   Run cypress command for the API scenarios `npm run cy:open:api`
+-   To open cypress command for the GUI scenarios `npm run cy:open:flow`
+-   To run cypress command for the GUI scenarios `npm run cy:run:flow`
+-   To open cypress command for the API scenarios `npm run cy:open:api`
+-   To run cypress command for the API scenarios `npm run cy:run:api`
 
 
 ### API Instructions

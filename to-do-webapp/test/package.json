@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cy:open:api": "npx cypress open -e testType=api",
-    "cy:open:flow": "npx cypress open -e testType=flow"
+    "cy:run:api": "npx cypress run -e testType=api",
+    "cy:open:flow": "npx cypress open -e testType=flow",
+    "cy:run:flow": "npx cypress run -e testType=flow"
   },
   "author": "",
   "license": "ISC",

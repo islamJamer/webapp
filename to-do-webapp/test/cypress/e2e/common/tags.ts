@@ -3,7 +3,7 @@ import { createdTodoId } from "../aliases/networkAliases";
 import { addNewTodo, deleteTodo } from "../utils/requestUtils";
 import { newtodoName } from "./consts";
 
-Before({ tags: 'add-one-todo-usint-api' }, () => {
+Before({ tags: '@add-one-todo-usint-api' }, () => {
     addNewTodo(newtodoName);
 })
 

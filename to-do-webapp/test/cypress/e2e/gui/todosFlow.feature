@@ -3,7 +3,7 @@ Feature: To Do webapp
     Background:
         Given I visit the "To Do" home page
 
-    @ignore
+    # @ignore
     Scenario: check page logo exists
         Then Page logo exists
 
@@ -13,7 +13,7 @@ Feature: To Do webapp
     Scenario: check "Available todos" container input exists
         Then "Available todos" container input exists
 
-    @ignore
+    # @ignore
     Scenario Outline: check "Available todos" container footer contains <tabTitle>
         Then "Available todos" container footer contains <tabTitle>
         Scenarios:
