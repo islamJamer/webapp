@@ -1,4 +1,5 @@
 /*/// <reference types="cypress" />*/
+import '@testing-library/cypress/add-commands'
 // ***********************************************
 // This example commands.js shows you how to
 // create various custom commands and overwrite
@@ -19,7 +20,9 @@
 //
 //
 // -- This is a dual command --
-// Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
+Cypress.Commands.add('getByClassName', { prevSubject: 'optional'}, (subject, className) => { 
+    return subject ? subject.find(`.${className}`) : cy.get(`.${className}`);
+})
 //
 //
 // -- This will overwrite an existing command --

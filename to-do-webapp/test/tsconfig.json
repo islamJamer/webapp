@@ -9,8 +9,9 @@
         ],
         "types": [
             "cypress",
+            "@testing-library/cypress",
             "node",
-            "jest"
+            "jest",
         ],
         // "baseUrl": "../node_modules",
         "esModuleInterop": true

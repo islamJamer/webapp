@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 export const TodoForm = (props) => (
     <form onSubmit={props.handleSubmit}>
-        <h3 className="todo-header">Avalilabe todos</h3>
+        <h3 className="todo-header">Available todos</h3>
         <input
             className="todo-input"
             type="text"
