@@ -46,7 +46,7 @@ export const setupNodeEvents = defineConfig({
       on('file:preprocessor', cucumber(options));
       return (config.env.testType === 'flow'
         ? getFlowTestsConfig()
-        : devConfig) as Cypress.PluginConfigOptions;
+        : getApiTestsConfig()) as Cypress.PluginConfigOptions;
     },
   },
 }).e2e?.setupNodeEvents;
