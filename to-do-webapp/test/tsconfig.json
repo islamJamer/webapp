@@ -1,19 +1,19 @@
 {
     "compilerOptions": {
         "target": "es5",
+        "moduleResolution": "node",
+        "allowJs": true,
         "lib": [
             "es5",
             "dom"
         ],
         "types": [
             "cypress",
-            "node"
+            "node",
+            "jest"
         ],
-        "baseUrl": "..",
+        // "baseUrl": "../node_modules",
         "esModuleInterop": true
     },
-    "include": [
-        "**/*.ts",
-        "support/commands.js"
-    ]
+    "include": [ "cypress.config.ts", "**/*.ts"]
 }
