@@ -7,3 +7,9 @@ export type RequestOptions = {
     url: RouteMatcher;
     response?: RouteHandler;
 }
+
+export type TodoObj = {
+    id?: string,
+    isComplete: Boolean;
+    name: string;
+}

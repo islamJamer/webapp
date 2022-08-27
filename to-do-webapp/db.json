@@ -1,11 +1,6 @@
 {
   "todos": [
     {
-      "name": "Driving",
-      "id": 4263,
-      "isComplete": false
-    },
-    {
       "name": "dressing",
       "id": 3769,
       "isComplete": false
@@ -13,22 +8,7 @@
     {
       "name": "showering",
       "id": 6078,
-      "isComplete": false
-    },
-    {
-      "isComplete": false,
-      "name": "new_todo",
-      "id": 6079
-    },
-    {
-      "isComplete": false,
-      "name": "new_todo",
-      "id": 6080
-    },
-    {
-      "isComplete": false,
-      "name": "new_todo",
-      "id": 6081
+      "isComplete": true
     }
   ],
   "users": [

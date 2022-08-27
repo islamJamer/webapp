@@ -45,3 +45,11 @@ export const info = {
         return cy.wait(info.value());
     },
 }
+
+export const createdTodoId = {
+    alias: 'createdTodoId',
+
+    value() {
+        return cy.get<string>(`@${createdTodoId.alias}`);
+    },
+}
