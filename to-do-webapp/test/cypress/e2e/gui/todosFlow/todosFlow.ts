@@ -1,14 +1,15 @@
 import { Given, Then, When } from "cypress-cucumber-preprocessor/steps";
 import { getTodoName } from "../../aliases/domAliases";
-import { addTodo } from "../../aliases/networkAliases";
-import { todoName } from "../../common/consts";
+import { addTodo, deleteTodo } from "../../aliases/networkAliases";
+import { newtodoName, todoName } from "../../common/consts";
 import { getTodosAppSelectors } from "../../selectors/todosAppSelectors";
-import { interceptAddTodoRequest } from "../../utils/interceptRequestUtils";
+import { interceptAddTodoRequest, interceptDeleteTodoRequest, visitPage } from "../../utils/interceptRequestUtils";
 
 const page = getTodosAppSelectors();
 
 Given('I visit the "To Do" home page', () => {
-    cy.visit('/')
+    visitPage('/');
+    // cy.visit('/');
 });
 
 Then('Page logo exists', () => {
@@ -38,4 +39,14 @@ Then('A new todo is added to the "Available todos" container list', () => {
     getTodoName.value().then(todoName => {
         page.availableTodos.todosList.should('contain.text', todoName);
     })
+});
+
+When('I click on the "Delete" utton of one todo item', () => {
+    interceptDeleteTodoRequest();
+    page.availableTodos.getSingleTodoItemByTitle(newtodoName).deleteButton.click();
+    deleteTodo.wait();
+});
+
+Then('The todo is deleted from the "Available todos" container list', () => {
+    page.availableTodos.todosList.should('not.contain.text', newtodoName);
 });
