@@ -19,3 +19,7 @@ Feature: To Do webapp
         |  "All"      |
         | "Active"    |
         | "Complete"  |
+
+    Scenario: A new todo is added to the "Available todos" container list
+        When I type the todo name in the input
+        Then A new todo is added to the "Available todos" container list

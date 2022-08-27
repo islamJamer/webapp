@@ -1,5 +1,9 @@
-import { Given, Then } from "cypress-cucumber-preprocessor/steps";
+import { Given, Then, When } from "cypress-cucumber-preprocessor/steps";
+import { getTodoName } from "../../aliases/domAliases";
+import { addTodo } from "../../aliases/networkAliases";
+import { todoName } from "../../common/consts";
 import { getTodosAppSelectors } from "../../selectors/todosAppSelectors";
+import { interceptAddTodoRequest } from "../../utils/interceptRequestUtils";
 
 const page = getTodosAppSelectors();
 
@@ -21,4 +25,17 @@ Then('"Available todos" container input exists', () => {
 
 Then('"Available todos" container footer contains {string}', tabTitle => {
     page.availableTodos.footer.should('contain.text', tabTitle);
+});
+
+When('I type the todo name in the input', () => {
+    cy.wrap(todoName).as(getTodoName.alias)
+    interceptAddTodoRequest();
+    page.availableTodos.header.input.type(`${todoName}{enter}`);
+    addTodo.wait();
+});
+
+Then('A new todo is added to the "Available todos" container list', () => {
+    getTodoName.value().then(todoName => {
+        page.availableTodos.todosList.should('contain.text', todoName);
+    })
 });
