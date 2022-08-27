@@ -1,5 +1,5 @@
 
-### Instructions to run the code locally
+### Prepare frontend and backend env
 
 -   Clone the app into your machine.
 -   Download json-server package globaly using `npm install -g json-server`.
@@ -11,6 +11,13 @@
 -   navigate to the directory of the app in the command line.
 -   Start the front end using `npm run start:frontend`.
 -   The app will be opened in your browser http://localhost:3000/
+   
+### Prepare cypress env
+-   Go to the test directory:  `cd test`
+-   install all the dependences using `npm install`
+-   Run cypress command for the GUI scenarios `npm run cy:open:gui`
+-   Run cypress command for the API scenarios `npm run cy:open:api`
+
 
 ### API Instructions
 
