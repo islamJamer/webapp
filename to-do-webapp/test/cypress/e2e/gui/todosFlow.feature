@@ -26,7 +26,7 @@ Feature: To Do webapp
         When I type the todo name in the input
         Then A new todo is added to the "Available todos" container list
 
-    @add-one-todo-for-this-scenario
+    @add-one-todo-usint-api
     Scenario: The todo is deleted from the "Available todos" container list
         When I click on the "Delete" utton of one todo item
         Then The todo is deleted from the "Available todos" container list
