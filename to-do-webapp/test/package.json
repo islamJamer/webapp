@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open:feature": "npx cypress open -e testType=feaure",
     "cy:open:flow": "npx cypress open -e testType=flow"
   },
   "author": "",

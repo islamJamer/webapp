@@ -9,8 +9,8 @@ const devConfig: Partial<Cypress.PluginConfigOptions> = {
   env: {
     intercept: true,
   },
-  specPattern: '**/*.{feature,features}',
-  excludeSpecPattern: ['*.ts', '**/*Flow.{feature,features}']
+  specPattern: '**/*Unit.{feature,features}',
+  excludeSpecPattern: ['*.ts', '**/*Flow.{feature,features}', '**/*Api.{feature,features}']
 }
 
 const getFlowTestsConfig = (hostUrl = 'http://localhost:3000'): Partial<Cypress.PluginConfigOptions> => ({
@@ -20,7 +20,17 @@ const getFlowTestsConfig = (hostUrl = 'http://localhost:3000'): Partial<Cypress.
     TAGS: 'not @ignore'
   },
   specPattern: '**/*Flow.{feature,features}',
-  excludeSpecPattern: '*.ts'
+  excludeSpecPattern: ['*.ts', '**/*feature.{feature,features}', '**/*Api.{feature,features}']
+})
+
+const getApiTestsConfig = (hostUrl = 'http://localhost:3000'): Partial<Cypress.PluginConfigOptions> => ({
+  baseUrl: `${hostUrl}`,
+  env: {
+    intercept: false,
+    TAGS: 'not @ignore'
+  },
+  specPattern: '**/*Api.{feature,features}',
+  excludeSpecPattern: ['*.ts', '**/*Flow.{feature,features}', '**/*Unit.{feature,features}']
 })
 
 export const setupNodeEvents = defineConfig({
