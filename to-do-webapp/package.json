@@ -16,6 +16,8 @@
         "start:server": "json-server -p 8080 db.json -m ./node_modules/json-server-auth -r routes.json",
         "build": "react-scripts build",
         "test": "react-scripts test --env=jsdom",
-        "eject": "react-scripts eject"
+        "eject": "react-scripts eject",
+        "cy:open:gui": "npx cypess open -e testType=gui",
+        "cy:open:api": "npx cypess open -e testType=api"
     }
 }
